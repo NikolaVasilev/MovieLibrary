@@ -1,0 +1,18 @@
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\bin\Debug\netcoreapp2.0\MovieLibrary.Data.deps.json
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\bin\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\bin\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.csprojResolveAssemblyReference.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.csproj.CoreCompileInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.AssemblyInfoInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.AssemblyInfo.cs
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\bin\Debug\netcoreapp2.0\MovieLibrary.Data.deps.json
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\bin\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\bin\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.csprojResolveAssemblyReference.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.csproj.CoreCompileInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.AssemblyInfoInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.AssemblyInfo.cs
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Data\obj\Debug\netcoreapp2.0\MovieLibrary.Data.pdb

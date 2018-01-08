@@ -1,0 +1,108 @@
+﻿@model EditMovieViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row" id="main">
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <form method="post" enctype="multipart/form-data">
+                    <h2>Edit Movie</h2>
+
+
+                    <div asp-validation-summary="All" class="text-danger"></div>
+
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <hr style="border-top: solid 1px darkgrey" />
+                        <div class="col-lg-8" style="padding: 0 10px 0 0; margin: 0 0 15px 0">
+                            <label asp-for="Title"></label>
+                            <input asp-for="Title" class="form-control" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        <div class="col-lg-4" style="padding: 0 0 0 10px; margin: 0 0 15px 0">
+                            <label asp-for="Year"></label>
+                            <input asp-for="Year" class="form-control" />
+                            <span asp-validation-for="Year" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Duration"></label>
+                            <input asp-for="Duration" class="form-control" />
+                            <span asp-validation-for="Duration" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Plot"></label>
+                            <textarea asp-for="Plot" class="form-control"></textarea>
+                            <span asp-validation-for="Plot" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="TrailerUrl"></label>
+                            <input asp-for="TrailerUrl" class="form-control" />
+                            <span asp-validation-for="TrailerUrl" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ImageUrl"></label>
+                            <input asp-for="ImageUrl" class="form-control" />
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ParrentControl">Parrent Control</label>
+                            <input asp-for="ParrentControl" class="form-control" />
+                            <span asp-validation-for="ParrentControl" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ReleaseDate">Release Date</label>
+                            <input asp-for="ReleaseDate" class="form-control" />
+                            <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Actiors"></label>
+                            <input asp-for="Actiors" placeholder="Example: John Doe, Ivan Ivanov" class="form-control" />
+                            <span asp-validation-for="Actiors" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Writers"></label>
+                            <input asp-for="Writers" placeholder="Example: John Doe, Ivan Ivanov" class="form-control" />
+                            <span asp-validation-for="Writers" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Director"></label>
+                            <input asp-for="Director" placeholder="Example: John Doe, Ivan Ivanov" class="form-control" />
+                            <span asp-validation-for="Director" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SelectedCategories">Categories</label>
+                            <select asp-for="SelectedCategories" asp-items="@Model.Categories" multiple class="form-control"></select>
+                            <small>*Hold "Ctrl" to select few categories.</small>
+                        </div>
+                        @if (User.IsInRole(RoleConstants.ModeratorRole) || User.IsInRole(RoleConstants.AdministratorRole))
+    {
+                    <div class="form-group">
+
+                        <input type="checkbox" asp-for="IsApproved" />
+                        <label asp-for="IsApproved">Is Approved</label>
+                    </div>
+}
+                        <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="UploaderUsername" />
+
+                        <button type="submit" class="btn btn-primary">Edit Movie</button>
+                        <a class="btn btn-default" onclick="location.href = document.referrer;">Return</a>
+                    </div>
+
+
+                </form>
+            </div>
+
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

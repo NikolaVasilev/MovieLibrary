@@ -1,0 +1,94 @@
+﻿@model EditProfileViewModel
+
+@{
+    ViewData["Title"] = "EditProfile";
+}
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row" id="main">
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <form method="post" enctype="multipart/form-data">
+                    <h1>Edit Profile!</h1>
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div>
+                        <!--<img src="/images/users/default-user.png" id="user_img" height="200" width="200" style="border-radius: 50%; margin: 0 0 20px 0; border: 10px solid #fff; box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);"/>-->
+                        <canvas id="user_img_c" height="180" width="180" style="background: url('@(string.IsNullOrEmpty(Model.ImgPath) ? "/images/users/default-user.png" : Model.ImgPath)') center center no-repeat; background-size: cover; border-radius: 50%; margin: 0 0 20px 0; border: 10px solid #fff; box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);"></canvas>
+                    </div>
+
+                    <div class="fileUpload btn btn-primary">
+                        <span>
+                            Upload New Profile Image
+                        </span>
+                        <input class="upload" type="file" title="search image" id="file" name="imageFile" onchange="show(this)" accept=".jpg, .jpeg, .gif, .png" />
+
+                    </div> <br />
+                    <p style="margin: 0 0 10px 0">
+                        <small>Max image size is 1Mb</small>
+                    </p>
+                    <input asp-for="ImgPath" hidden/>
+                    @*<span asp-validation-for="ImageFile" class="text-danger"></span>*@
+                    <div class="col-lg-4 col-lg-offset-4">
+                        <div class="form-group">
+                            <label asp-for="UserName"></label>
+                            <input asp-for="UserName" disabled class="form-control"/>
+                            <span asp-validation-for="UserName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="FirstName"></label>
+                            <input asp-for="FirstName" class="form-control"/>
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="LastName"></label>
+                            <input asp-for="LastName" class="form-control"/>
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="BirthDate"></label>
+                            <input asp-for="BirthDate" class="form-control"/>
+                            <span asp-validation-for="BirthDate" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" class="form-control"/>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        @if (@User.IsInRole(RoleConstants.AdministratorRole))
+                        {
+                            <label asp-for="UserRole">Role</label>
+                            <div class="form-group">
+                                <input type="hidden" name="OldUserRole" value="@Model.OldUserRole" />
+                                <select name="UserRole" asp-items="Model.Roles" class="form-control"></select>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <label asp-for="Password"></label>
+                            <input asp-for="Password" class="form-control"/>
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ConfirmPassword"></label>
+                            <input asp-for="ConfirmPassword" class="form-control"/>
+                            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                        </div>
+                      
+                        <button type="submit" class="btn btn-primary">Edit Profile</button>
+                        <a class="btn btn-default" onclick="location.href = document.referrer;">Return</a>
+                    </div>
+
+                  
+                </form>
+            </div>
+
+           
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

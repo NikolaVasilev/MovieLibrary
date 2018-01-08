@@ -1,0 +1,55 @@
+﻿@model ProfileServiceModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row" id="main">
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                @if (@Model.Username == @User.Identity.Name)
+                {
+                    <h1>Welcome @Model.Username!</h1>
+                }
+                else
+                {
+                    <h1>@Model.Username</h1>
+                }
+                <canvas id="user_img_c" height="180" width="180" style="background: url('@(string.IsNullOrEmpty(Model.ImgPath) ? "/images/users/default-user.png" : Model.ImgPath)') center center no-repeat; background-size: cover; border-radius: 50%; margin: 0 0 20px 0; border: 10px solid #fff; box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);"></canvas>
+                <p>
+                    @if (User.Identity.Name == Model.Username || User.IsInRole(RoleConstants.AdministratorRole))
+                    {
+                        <a asp-controller="Users" asp-action="EditProfile" asp-route-username="@Model.Username" class="btn btn-primary">Edit Profile</a>
+                    }
+                </p>
+            </div>
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <p style="margin: 0">E-mail: @Model.Email</p>
+            </div>
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <p style="margin: 0">Full Name: @Model.FirstName @Model.LastName</p>
+            </div>
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <p style="margin: 0">Birth Date: @Model.BirthDate.ToShortDateString()</p>
+            </div>
+            
+            @if(Model.UploadedMovies.Count != 0)
+            { 
+                <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                    <h4 style="margin: 0">Uploaded Movies: @Model.UploadedMovies.Count.ToString()</h4>
+                    
+                   
+                </div>
+                <div class="col-sm-10 col-md-10 col-sm-offset-1 col-md-offset-1" id="content">
+                @await Html.PartialAsync("_listUserMovies")
+                    </div>
+            }
+            
+            
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
+

@@ -1,0 +1,18 @@
+﻿@model ListMoviesViewModel
+
+@{
+    ViewData["Title"] = "ListMovies";
+}
+
+<div style="text-align: center">
+    <a class="list-header" asp-area="" asp-controller="Movies" asp-action="ListMovies">
+        <h2>
+            Movies
+        </h2>
+    </a>
+</div>
+
+<hr style="margin: 40px 10px 0 15px " />
+<div class="row" style="margin: 20px 0 0 0">
+    @await Html.PartialAsync("_ListMoviesPagination")
+</div>

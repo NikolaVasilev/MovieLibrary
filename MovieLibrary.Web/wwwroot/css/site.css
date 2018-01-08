@@ -1,0 +1,317 @@
+﻿@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+.dummy { display: none; }
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 6rem;
+    
+}
+
+img.img-responsive {
+    height: 300px;
+    width:auto;/*maintain aspect ratio*/
+    max-width:200px;
+}
+img.img-responsive-list {
+    height: 250px;
+    width: auto; /*maintain aspect ratio*/
+    max-width: 400px;
+}
+
+img.img-responsive-list-user {
+    height: 100px;
+    width: auto; /*maintain aspect ratio*/
+    max-width: 200px;
+}
+img.img-responsive-list-home {
+    height: 200px;
+    width: auto; /*maintain aspect ratio*/
+    max-width: 300px;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.navbar {
+    height: 60px;
+    /*background-color: cornflowerblue;*/
+}
+
+a.navbar-logo {
+    padding: 30px 30px;
+    font-size: 15pt;
+    color: white
+}
+
+a.list-movie {
+    color: #333
+}
+a:hover.list-movie {
+    text-decoration: none;
+    color: #7B993D
+}
+
+a:hover.navbar-logo {
+    text-decoration: none;
+    font-size: 15pt;
+    color: #90CC14
+}
+
+a.list-header {
+    color: #333
+}
+
+a:hover.list-header {
+    text-decoration: none;
+    font-size: 15pt;
+    color: #90CC14
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+a.btn.btn-primary {
+    background-color: #A0CC3A;
+    border-color: #7B993D
+}
+a:hover.btn.btn-primary {
+    background-color: #7B993D;
+    border-color: #7B993D
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #A0CC3A;
+    border-color: #7B993D;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #7B993D;
+    border-color: #7B993D
+}
+
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+
+    .fileUpload input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+#wrapper {
+    padding-left: 0;
+    min-height: 100%;
+}
+
+#page-wrapper {
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0 -30px;
+    background-color: #fff;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 22px 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+}
+
+    .top-nav > li {
+        display: inline-block;
+        float: left;
+    }
+
+        .top-nav > li > a {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            line-height: 20px;
+            color: #fff;
+        }
+
+            .top-nav > li > a:hover,
+            .top-nav > li > a:focus,
+            .top-nav > .open > a,
+            .top-nav > .open > a:hover,
+            .top-nav > .open > a:focus {
+                color: #fff;
+                background-color: #1a242f;
+            }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}              
+
+                a.freshGreen:hover,
+                a.freshGreen:focus {
+                    color: #90CC14 !important;
+                    
+                }
+                a.freshGreenSelected {
+                    color: #90CC14 !important;
+                    
+                }
+
+.navbar-inverse .btn-link {
+    color: #fff;
+}
+
+    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
+        color: #90CC14;
+        text-decoration: none;
+    }
+
+.top-nav > .open > .dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+        .top-nav > .open > .dropdown-menu > li > a {
+            white-space: normal;
+        }
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 60px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        border-top: 1px rgba(0,0,0,.5) solid;
+        overflow-y: auto;
+        background-color: #222;
+        /*background-color: #5A6B7D;*/
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+        .side-nav > li > a {
+            width: 225px;
+            border-bottom: 1px rgba(0,0,0,.3) solid;
+        }
+
+        .side-nav li a:hover,
+        .side-nav li a:focus {
+            outline: none;
+            background-color: #1a242f !important;
+        }
+}
+
+.side-nav > li > ul {
+    padding: 0;
+    border-bottom: 1px rgba(0,0,0,.3) solid;
+}
+
+    .side-nav > li > ul > li > a {
+        display: block;
+        padding: 10px 15px 10px 38px;
+        text-decoration: none;
+        /*color: #999;*/
+        color: #fff;
+    }
+
+        .side-nav > li > ul > li > a:hover {
+            color: #fff;
+        }
+
+.navbar .nav > li > a > .label {
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    right: 6px;
+    font-size: 10px;
+    font-weight: normal;
+    min-width: 15px;
+    min-height: 15px;
+    line-height: 1.0em;
+    text-align: center;
+    padding: 2px;
+}
+
+.navbar .nav > li > a:hover > .label {
+    top: 10px;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 1rem;
+}

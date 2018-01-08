@@ -1,0 +1,109 @@
+﻿@model IList<ListLatestFourServiceModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@if(!User.Identity.IsAuthenticated)
+{
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" style="width: 1200px; margin: 0 auto; border-radius: 30px; overflow: hidden">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2" ></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+   
+    <div class="carousel-inner" role="listbox">
+        <div class="item">
+            <img src="images/burning_poker_joker-wallpaper-1680x1050.jpg" alt="ASP.NET" class="img-responsive" />
+           
+            <div class="carousel-caption" role="option">
+                <p>
+                    <a class="btn btn-default" href="https://www.warnerbros.com/dark-knight">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/clone_wars_last_stand-wallpaper-1680x1050.jpg" alt="Visual Studio" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                 <p>
+                    <a class="btn btn-default" href="http://www.starwars.com/tv-shows/star-wars-the-clone-wars">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item active">
+            <img src="images/pirates_of_the_caribbean_5_dead_men_tell_no_tales-wallpaper-1680x1050.jpg" alt="Package Management" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    <a class="btn btn-default" href="http://pirates.disney.com/">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/the_dark_knight_rises-wallpaper-1680x1050.jpg" alt="Microsoft Azure" class="img-responsive" />
+            <div class="carousel-caption" role="option">
+                <p>
+                    
+                    <a class="btn btn-default" href="https://www.warnerbros.com/dark-knight-rises">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+}
+else
+{
+    <div style="text-align: center">      
+        <h2>New Movies</h2>
+    </div>
+
+    <div id="page-wrapper">
+        <div class="row" id="main">
+          
+        <div class="container-fluid">
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <hr style="margin: 40px 10px 0 15px" />
+                @foreach (var movie in @Model)
+                {
+                    <div class="col-lg-3">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">
+                                    <a class="list-movie" asp-controller="Movies" asp-action="MoviePreview" asp-route-movieId="@movie.Id"><b>@(movie.Title.Length > 20 ? movie.Title.Substring(0, 20) : movie.Title)</b></a>
+                                </h3>
+                            </div>
+                            <div class="panel-body" style="position: relative;">
+                                <div class="col-lg-5">
+                                    <a class="list-movie" asp-controller="Movies" asp-action="MoviePreview" asp-route-movieId="@movie.Id"><img src="@movie.ImageUrl" class="img-responsive-list-home"></a>
+                                </div>
+                            </div>
+                            <div class="panel-heading">
+                                <h3 class="panel-title text-center">
+                                    <small>Uploaded on @movie.UploadDate.ToShortDateString() by @movie.Uploader</small>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    </div>
+}

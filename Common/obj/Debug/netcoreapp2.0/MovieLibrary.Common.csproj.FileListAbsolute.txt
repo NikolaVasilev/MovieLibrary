@@ -1,0 +1,18 @@
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\bin\Debug\netcoreapp2.0\MovieLibrary.Common.deps.json
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\bin\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\bin\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.csproj.CoreCompileInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.AssemblyInfoInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.AssemblyInfo.cs
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.csprojResolveAssemblyReference.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\bin\Debug\netcoreapp2.0\MovieLibrary.Common.deps.json
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\bin\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\bin\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.csprojResolveAssemblyReference.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.csproj.CoreCompileInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.AssemblyInfoInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.AssemblyInfo.cs
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\Common\obj\Debug\netcoreapp2.0\MovieLibrary.Common.pdb

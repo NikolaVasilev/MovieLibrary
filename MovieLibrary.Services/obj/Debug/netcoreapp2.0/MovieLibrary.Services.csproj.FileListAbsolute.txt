@@ -1,0 +1,26 @@
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Services.deps.json
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Services.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Services.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.csprojResolveAssemblyReference.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.csproj.CoreCompileInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.AssemblyInfoInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.AssemblyInfo.cs
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Services.deps.json
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Services.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Services.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\bin\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.csprojResolveAssemblyReference.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.csproj.CoreCompileInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.AssemblyInfoInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.AssemblyInfo.cs
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Services\obj\Debug\netcoreapp2.0\MovieLibrary.Services.pdb

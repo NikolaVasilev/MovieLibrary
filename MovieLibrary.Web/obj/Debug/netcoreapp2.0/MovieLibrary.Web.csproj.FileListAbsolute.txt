@@ -1,0 +1,36 @@
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.deps.json
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.runtimeconfig.json
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.runtimeconfig.dev.json
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Services.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Services.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.csprojResolveAssemblyReference.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.csproj.CoreCompileInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.AssemblyInfoInputs.cache
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.AssemblyInfo.cs
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.dll
+D:\C# Web\C#DotNetCore\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.deps.json
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.runtimeconfig.json
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.runtimeconfig.dev.json
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Web.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Common.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Data.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Services.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Common.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Services.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\bin\Debug\netcoreapp2.0\MovieLibrary.Data.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.csprojResolveAssemblyReference.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.csproj.CoreCompileInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.AssemblyInfoInputs.cache
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.AssemblyInfo.cs
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.dll
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\MovieLibrary.Web.pdb
+D:\Work\Programing\MovieLibrary\MovieLibrary.Web\MovieLibrary.Web\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

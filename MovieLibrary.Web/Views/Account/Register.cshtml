@@ -1,0 +1,72 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+<div class="row" style="text-align: center">
+    
+    <div class="col-md-4 col-md-offset-4">
+        <h2>@ViewData["Title"]</h2>
+        <form asp-route-returnUrl="@ViewData["ReturnUrl"]" method="post" enctype="multipart/form-data">
+            <h4>Create a new account.</h4>
+            <hr/>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div>
+                <!--<img src="/images/users/default-user.png" id="user_img" height="200" width="200" style="border-radius: 50%; margin: 0 0 20px 0; border: 10px solid #fff; box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);"/>-->
+                <canvas id="user_img_c" height="200" width="200" style="background: url('/images/users/default-user.png') center center no-repeat; background-size: cover; border-radius: 50%; margin: 0 0 20px 0; border: 10px solid #fff; box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);"></canvas>
+            </div>
+
+            <div class="fileUpload btn btn-primary">
+                <span>
+                    Upload Profile Image
+                </span>
+                <input class="upload" type="file" title="search image" id="file" name="imageFile" onchange="show(this)" accept=".jpg, .jpeg, .gif, .png"/>
+
+            </div> <br/>
+            <p style="margin: 0 0 10px 0"><small>Max image size is 1Mb</small>
+            </p>
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="UserName"></label>
+                <input asp-for="UserName" class="form-control"/>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FirstName"></label>
+                <input asp-for="FirstName" class="form-control"/>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastName"></label>
+                <input asp-for="LastName" class="form-control"/>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate"></label>
+                <input asp-for="BirthDate" class="form-control"/>
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control"/>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control"/>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control"/>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-default">Register</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

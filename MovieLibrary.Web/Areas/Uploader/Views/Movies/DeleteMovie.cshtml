@@ -1,0 +1,59 @@
+﻿@model PreviewMovieViewModel
+
+@{
+    ViewData["Title"] = "Delete Movie";
+}
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="row" id="main">
+            <div class="col-sm-10 col-md-10 well col-sm-offset-1 col-md-offset-1" id="content" style="text-align: center">
+                <h1 style="margin-bottom: 10px">@Model.Title</h1>
+                <div class="col-lg-12">
+                    <hr style="border-top: solid 1px darkgrey" />
+                    <div class="row">
+                        <p ><b>Are you sure to delete movie "@Model.Title"?</b></p>
+                        <a asp-area="@AreaConstants.UploaderArea" asp-controller="Movies" asp-action="ConfirmDelete" asp-route-movieId="@Model.Id" class="btn btn-danger">Delete</a>
+                        <a class="btn btn-default" onclick="location.href = document.referrer;">Return</a>
+                        <hr style="border-top: solid 1px darkgrey"/>
+                    </div>
+                </div>
+                <div class="col-lg-3" style="margin-top: 10px">
+                    <img src="@Model.ImageUrl" class="img-responsive" style="border-radius: 10px">
+                </div>
+                <div class="col-lg-9" style="margin-top: 10px; text-align: left">
+                    <p>Duration: @Model.Duration Min</p>
+                    <p>Release Date: @Model.ReleaseDate.ToString("dd MMM yyyy")</p>
+                    @if (Model.ParrentControl != null)
+                    {
+                        <p>Age Recommendation: @Model.ParrentControl+</p>
+                    }
+                    <div>
+                        <br />
+                        <p>Plot:</p>
+                        <p>@Model.Plot</p>
+                    </div>
+                    <p>Uploaded by: @Model.UploaderName
+                </div>
+                <div class="col-lg-12" style="text-align: left">
+                    <hr style="border-top: solid 1px darkgrey" />
+
+                    <p><b>Actors:</b> @(string.Join(", ", Model.ActiorNames))</p>
+                    <p><b>Writers:</b> @(string.Join(", ", Model.WriterNames))</p>
+                    <p><b>Director:</b> @(string.Join(", ", Model.DirectorNames))</p>
+                    <p><b>Genres:</b> @(string.Join(", ", Model.CategoryNames))</p>
+                    <hr style="border-top: solid 1px darkgrey" />
+                </div>
+                <div class="col-lg-12">
+                    <h4 style="margin-bottom: 10px">Trailer:</h4>
+                    @{ var videoUrl = Model.TrailerUrl.Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries);}
+                    <iframe width="560" height="315" src="@("https://www.youtube.com/embed/" + videoUrl.Last())" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</div>
